@@ -1,0 +1,56 @@
+.app__footer {
+  background: var(--color-black);
+  color: var(--color-grey);
+  padding: 3rem 0;
+}
+
+.footer-head {
+  border-bottom: 1px solid var(--color-grey);
+  width: 80vw;
+  justify-content: space-between !important;
+  padding: 1rem 0;
+}
+
+.newsletter {
+  padding: 1rem 0;
+  width: 50vw;
+  justify-content: space-between !important;
+}
+
+.footer-mid {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-grey);
+  width: 80vw;
+  justify-content: space-between !important;
+}
+
+.footer-low {
+  width: 50vw;
+  justify-content: space-between !important;
+}
+
+.mt-1 {
+  margin-top: 2rem;
+}
+
+.footer-input {
+    font-size: 1.2rem;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 8px;
+    border: none;
+    background: var(--color-grey);
+    color: var(--color-black);
+}
+
+.footer-button {
+  margin-left: 0.5rem;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  width: 6vw;
+  height: 6vh;
+  border-radius: 8px;
+  border: none;
+  background: var(--color-grey);
+  color: var(--color-black);
+}

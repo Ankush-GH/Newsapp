@@ -1,0 +1,28 @@
+.app__card {
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.card-title {
+  position: relative;
+  max-height: 14vh;
+  overflow: hidden;
+  text-decoration-line: underline;
+}
+.dots {
+  position: absolute;
+  right: 4px;
+  bottom: 1px;
+}
+
+.card-desc {
+  position: relative;
+  height: 30%;
+  max-height: 9vh;
+  overflow: hidden;
+}
+
+.a {
+  color: black;
+  text-decoration: none;
+}

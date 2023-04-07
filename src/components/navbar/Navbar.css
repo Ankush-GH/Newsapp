@@ -1,0 +1,25 @@
+.app__navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: var(--color-black);
+  color: var(--color-grey);
+}
+
+.nav-mainheader {
+  position: absolute;
+  left: 1%;
+}
+
+.login-btn {
+  color: var(--color-grey);
+  position: absolute;
+  right: 5%;
+}
+
+.signup-btn {
+  color: var(--color-grey);
+  position: absolute;
+  right: 12%;
+}

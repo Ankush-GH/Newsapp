@@ -9,7 +9,8 @@ const NewsState = (props) => {
   const getNews = (url) => {
     setLoadingState(true);
     fetchData(url).then((data) => {
-      setAllNewsValue(data.data.articles);
+      console.log(data.results);
+      setAllNewsValue(data.results);
       setLoadingState(false);
     });
   };

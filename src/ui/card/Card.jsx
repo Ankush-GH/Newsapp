@@ -10,7 +10,7 @@ import IMG from "../../assets/newsImg.jpg";
 const CardComponent = ({ News }) => {
   return (
     <Card
-      key={News.source.id === null ? 1 : News.source.id}
+      key={News.source_id}
       className="app__card"
       sx={{
         maxWidth: 320,
@@ -34,20 +34,20 @@ const CardComponent = ({ News }) => {
               fontFamily: "var(--font-base)",
             }}
           >
-            {News.source.name}
+            {News.creator}
           </Typography>
           <Typography
             style={{
               fontFamily: "var(--font-base)",
             }}
           >
-            {News.publishedAt}
+            {News.pubDate}
           </Typography>
         </div>
         <CardMedia
           component="img"
           height="140"
-          image={News.urlToImage === null ? IMG : News.urlToImage}
+          image={News.image_url === null ? IMG : News.image_url}
           alt="green iguana"
         />
         <CardContent>
@@ -60,10 +60,10 @@ const CardComponent = ({ News }) => {
             variant="h5"
             component="div"
           >
-            {/* <a href={News.url} className="a"> */}
-            {News.title}
-            {/* </a> */}
-            <span className="dots">...</span>
+            <a href={News.link} className="a">
+              {News.title}
+              <span className="dots">...</span>
+            </a>
           </Typography>
           <Typography
             className="card-desc"
